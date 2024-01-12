@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="styles.css"> Adicione um arquivo de estilo personalizado se necessário -->
+    <title>Contatos - Shop Online</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-secondary text-white text-center py-5">
+        <div class="container">
+            <img src="../img/logo.png" alt="Shop Online Logo" class="d-block w-50 mx-auto img-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-flex justify-content-center align-items-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item text-uppercase font-weight-bold px-3">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item text-uppercase font-weight-bold px-3">
+                                <a class="nav-link" href="../produtos/produtos_index.html">Produtos</a>
+                            </li>
+                            <li class="nav-item text-uppercase font-weight-bold px-3">
+                                <a class="nav-link" href="../categorias/categorias_index.html">Categorias</a>
+                            </li>
+                            <li class="nav-item text-uppercase font-weight-bold px-3">
+                                <a class="nav-link" href="#">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Seção de Produtos em Destaque -->
+    <section id="produtos-destaque" class="py-5">
+    <div class="container justify-content-center" >
+        <h2 class="text-center mb-4">Canais de Atendimento</h2>
+        <div class="row justify-content-center">
+
+            <!-- Contato via chat -->
+            <div class="col-md-4" style="height: 260px;">
+                <a href="https://chat.openai.com/" target="_blank" style="text-decoration: none;">
+                    <div class="card bg-secondary" style="font-size: 30px;">
+                        <div class="card-body" style="color: white">
+                            <i class="bi bi-chat-right-fill"></i>
+                            <h5 class="card-title">Contato via chat</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Contato via WhatsApp -->
+            <div class="col-md-4" style="height: 260px;">
+                <a href="https://web.whatsapp.com/" target="_blank" style="text-decoration: none">
+                    <div class="card bg-secondary">
+                        <div class="card-body" style="color: white">
+                            <i class="bi bi-whatsapp" style="font-size: 30px;"></i>
+                            <h5 class="card-title">Contato via WhatsApp</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Central de atendimento Shop Online -->
+            <div class="col-md-4" style="height: 300px; width: 880px;">
+                <a href="#" style="text-decoration: none">
+                    <div class="card bg-secondary">
+                        <div class="card-body" style="color: white; ">
+                            <i class="bi bi-telephone-inbound-fill" style="font-size: 45px;"></i>
+                            <h4 class="card-title">Central de atendimento Shop Online</h4>
+                            <p>Das 08h às 19h de segunda a sábado, exceto feriados.</p>
+
+                            <div>
+                            <!-- <div class="row" style="display: flex;"> -->
+                                <i class="bi bi-whatsapp" style="font-size: 15px;"></i>
+                                <p> (11) 4020-5376 Capitais</p>
+                            <!-- </div> -->
+                            <!-- <div class="row" style="display: flex;"> -->
+                                <i class="bi bi-telephone-fill" style="font-size: 15px;"></i>
+                                <p> 0800-020-5376 Demais regiões
+                            <!-- </div> -->
+                        </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+     
+</section>
+  
+    <!-- Formulário de Inscrição -->
+    <section id="inscricao" class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center">Inscreva-se para Ofertas Exclusivas</h2>
+            <form>
+                <!-- Adicione campos do formulário de inscrição aqui -->
+                <button type="submit" class="btn btn-primary" onclick="openPage()">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center py-2">
+        <p id="paragrafo_rodape"></p>
+    </footer>
+
+    <!-- Scripts Bootstrap (JavaScript) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="index.js"></script> -->
+</body>
+</html>

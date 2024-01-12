@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="produtos.css"> <!-- Adicione um arquivo de estilo personalizado se necessário -->
+    <title>Incrição de Ofertas - Shop Online</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-secondary text-white text-center py-4">
+        <div class="container">
+            <img src="../img/logo.png" alt="Shop Online Logo" class="d-block w-50 mx-auto img-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-flex justify-content-center align-items-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item text-uppercase font-weight-bold px-3">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item text-uppercase font-weight-bold px-3">
+                                <a class="nav-link" href="#">Produtos</a>
+                            </li>
+                            <li class="nav-item text-uppercase font-weight-bold px-3">
+                                <a class="nav-link" href="#">Categorias</a>
+                            </li>
+                            <li class="nav-item text-uppercase font-weight-bold px-3">
+                                <a class="nav-link" href="#">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+   
+
+
+    <!-- Seção de Produtos em Destaque -->
+    <section id="produtos-destaque" class="py-3">
+        
+    <div class="container">
+        
+        <div class="row">
+            
+            <div class="col-12 mb-4">
+
+                <h2 class="mb-4" style="text-align: center;">Formulário de Inscrição</h2>
+
+                <div class="card">
+
+                    <div class="row m-3">
+                        
+                        <h4>Cadastre-se para receber ofertas especiais</h4>
+                      
+                        <div class="mb-3 mt-4 h-50 d-inline-block" style="width: 300px;">
+                            <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="João Lucas">
+                        </div>
+                        <div  class="mb-3 mt-4 h-50 d-inline-block" style="width: 300px;">
+                            <label for="exampleFormControlInput1" class="form-label" >Sobrenome</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Pereira da Silva">
+                        </div>
+                        <div class="mb-3 mt-3 h-50 d-inline-block" style="width: 670px;">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@email.com">
+                        </div>
+                        <div class="mb-4 mt-3 h-50 d-inline-block" style="width: 200px;">
+                            <label for="exampleFormControlInput1" class="form-label">Celular</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="xx xxxxx-xxxx">
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-primary mt-1" style="width: 180px; height: 50px;" data-bs-toggle="modal" data-bs-target="#produtoCarrinhoDeComprasModal">Cadastrar</button>    
+                        </div>
+
+                        <!-- Modal para notificar a inscrição para receber ofertas -->
+                        <div class="modal fade" id="produtoCarrinhoDeComprasModal" tabindex="-1" aria-labelledby="produtoCarrinhoDeComprasModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="produtoCarrinhoDeComprasModalLabel">
+                                    Inscrição
+                                    <i class="bi bi-check2-circle"></i>
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Inscrição realizada com sucesso!
+                                </div>
+                                <div class="modal-footer">
+                                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                                <button type="button" class="btn btn-primary">Ok</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+     
+
+</section>
+
+    <!-- Rodapé -->
+    <footer class="text-center py-3">
+        <p id="paragrafo_rodape"></p>
+    </footer>
+
+    <!-- Scripts Bootstrap (JavaScript) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+<!-- https://www.mercadolivre.com.br/cadeira-de-escritorio-duoffice-du388-gamer-ergonmica-preta-com-estofado-de-espuma/p/MLB27916941#reco_item_pos=1&reco_backend=item_decorator&reco_backend_type=function&reco_client=home_items-decorator-legacy&reco_id=6c7c1152-9ac0-4e7b-bb6e-ba2d73387852&c_id=/home/navigation-trends-recommendations/element&c_uid=a28fae6e-5b91-4328-a4d7-5e6f8f0cc563&da_id=navigation_trend&da_position=3&id_origin=/home/dynamic_access&da_sort_algorithm=ranker -->
